@@ -10,6 +10,10 @@ This project is a collection of various programs written in different programmin
    - Description: This program is written in C++, it shows how to implement the stack data structure using arrays. I have also used switch case to make it menu driven after taking input from the user.
    - File: `dsa_first.cpp`
 
+1. **LinkedList Creation and Display**
+   - Description: This program is written in C++, it shows how to implement linked lists. We have created a simple linked list and displayed it without using any functions.
+   - File: `linkedlist_creation_display.cpp`
+
 
 
 ## Usage
