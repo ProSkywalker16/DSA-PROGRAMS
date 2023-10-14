@@ -1,4 +1,4 @@
-# DATA STRUCTURES AND ALGORITHMS PROGRAMS  
+# DATA STRUCTURES AND ALGORITHMS PROGRAMS
 
 ## Overview
 
@@ -10,9 +10,18 @@ This project is a collection of various programs written in different programmin
    - Description: This program is written in C++, it shows how to implement the stack data structure using arrays. I have also used switch case to make it menu driven after taking input from the user.
    - File: `dsa_first.cpp`
 
-1. **LinkedList Creation and Display**
+2. **LinkedList Creation and Display**
    - Description: This program is written in C++, it shows how to implement linked lists. We have created a simple linked list and displayed it without using any functions.
    - File: `linkedlist_creation_display.cpp`
+
+3. **single Linked List and operations**
+   - Description: This program is written in C++, it shows how to implement a singly linked list and to perform various insertion, deletion and display operations and then displayed it without using any functions.
+   - File: `singlyLinkedList.cpp`
+
+4. **circular Linked List and operations**
+
+   - Description: This program is written in C++, it shows how to implement a circular linked list and to perform various insertion, deletion and display operations and then displayed it without using any functions.
+   - File: `circularLinkedList.cpp`
 
 
 
