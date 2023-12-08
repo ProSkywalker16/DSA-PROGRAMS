@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 using namespace std;
 
 class Node
@@ -6,11 +6,15 @@ class Node
 public:
     int data;
     Node *next;
-};
+}* first = nullptr;
+
+
+
 
 int main()
 {
     int n;
+    int key;
 
     // Ask the user for the size of the array
     cout << "Enter the size of the array: ";
@@ -58,5 +62,12 @@ int main()
         p = p->next;
     }
 
+
+    
     return 0;
 }
+
+
+
+
+

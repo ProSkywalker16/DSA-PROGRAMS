@@ -28,6 +28,16 @@ This project is a collection of various programs written in different programmin
    - Description: This program is written in C++, it shows how to implement a linked list and then find the maximum element from the linked list. We have used a hash define function and specified the INT32 compiler for C++.
    - File: `maxElement.cpp`
 
+5. **Linear Search operation in a Linked list**
+
+   - Description: This program is written in C++, it shows how to implement a linked list and then use the Linear search algorithm to search for an element. 
+   - File: `LinkedListLinearSearch.cpp`
+
+5. **Insertion in a Linked list**
+
+   - Description: This program is written in C++, it shows how to implement a linked list and then perform the insertion operation at beginning and any position (includes end).
+   - File: `LinkedListLinearSearch.cpp`
+
 
 
 ## Usage
