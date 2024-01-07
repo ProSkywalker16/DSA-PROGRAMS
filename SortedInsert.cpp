@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -7,6 +6,8 @@ struct Node
     int data;
     Node *next;
 }*first = nullptr;
+
+
 
 void create(int A[], int n)
 {
@@ -27,29 +28,32 @@ void create(int A[], int n)
     }
 }
 
-
-
-void Insert(Node *p, int index, int x)
+void SortedInsert(Node *p, int x)
 {
-    Node *t;
-    int i;
-
+    Node *t, *q = nullptr;
     t = new Node;
     t->data = x;
+    t->next = nullptr;
 
-    if(index == 0)
-    {
-        t->next = first;
+    if(first == nullptr)
         first = t;
-    }
     else
     {
-        for(i = 0; i < index-1; i++)
+        while(p && p->data < x)
         {
+            q = p;
             p = p->next;
         }
-        t->next = p->next;
-        p->next = t;
+        if(p == first)
+        {
+            t->next = first;
+            first = t;
+        }
+        else
+        {
+            t->next = q->next;
+            q->next = t;
+        }
     }
 }
 
@@ -62,6 +66,7 @@ void Display(Node *p)
     }
     cout << endl;
 }
+
 int main()
 {
     int n;
@@ -77,22 +82,13 @@ int main()
 
     create(A, n);
 
-    int index, x;
-    cout << "Enter the index and element to insert: ";
-    cin >> index >> x;
-    if(index>n || index<0)
-    {
-        cout<<"Out of bounds"<<endl;
-    }
-    else
-    {
+    int x;
+    cout << "Enter the element to insert: ";
+    cin >> x;
 
-    Insert(first, index, x);
+    SortedInsert(first, x);
     Display(first);
 
     delete [] A;
-    }
     return 0;
 }
-
-
